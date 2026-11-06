@@ -5,6 +5,8 @@ site_url: https://mariiana27.github.io/Reposit-rio-de-programas-de-submarino-nuc
 theme:
   name: material
   language: pt-BR
+  logo: assets/logo_reposit_submarino.png
+  favicon: assets/logo_reposit_submarino.png
   features:
     - navigation.sections
     - navigation.top
@@ -13,12 +15,12 @@ theme:
     - content.code.copy
   palette:
     - scheme: default
-      primary: indigo
+      primary: blue
       toggle:
         icon: material/weather-night
         name: Modo escuro
     - scheme: slate
-      primary: indigo
+      primary: blue
       toggle:
         icon: material/weather-sunny
         name: Modo claro

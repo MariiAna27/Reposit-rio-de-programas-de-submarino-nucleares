@@ -62,14 +62,14 @@
       res.sort(function (a, b) { return (b.ano || "0").localeCompare(a.ano || "0"); });
       root.querySelector(".cat-contagem").textContent = res.length + " de " + dados.length + " documento(s)";
       var pagina = new URL("../documentos/", location.href);
-      root.querySelector(".cat-lista").innerHTML = res.map(function (d) {
+      root.querySelector(".cat-lista").innerHTML = res.length ? res.map(function (d) {
         var meta = [d.ano, d.pais, d.programa, d.tipo, d.idioma, d.fonte].filter(Boolean).map(esc).join(" · ");
         return '<li><a href="' + pagina + esc(d.id) + '/">' + esc(d.titulo) + "</a>" +
           (d.autores ? '<div class="cat-autores">' + esc(d.autores) + "</div>" : "") +
           '<div class="cat-meta">' + meta + "</div>" +
           (d.link ? '<a class="cat-fonte" href="' + esc(d.link) + '" target="_blank" rel="noopener">Fonte original ↗</a>' : "") +
           "</li>";
-      }).join("");
+      }).join("") : '<li class="cat-vazio">Nenhum documento corresponde aos filtros selecionados.</li>';
     }
     render();
   }
