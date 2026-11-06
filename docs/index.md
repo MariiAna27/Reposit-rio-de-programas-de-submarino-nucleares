@@ -1,7 +1,7 @@
 <section class="repo-hero">
   <div class="repo-hero__content">
     <p class="repo-eyebrow"><span class="repo-eyebrow__dot"></span> Acervo de pesquisa · submarinos nucleares</p>
-    <h1>Conhecimento para<br><span>ir mais fundo.</span></h1>
+    <h1><span class="repo-hero__title-word">Conhecimento</span> para<br><span>ir mais fundo.</span></h1>
     <p class="repo-hero__lead">Um catálogo organizado de artigos, relatórios e fontes sobre programas de desenvolvimento de submarinos nucleares ao redor do mundo.</p>
     <div class="repo-actions">
       <a class="md-button md-button--primary" href="catalogo/">Explorar catálogo <span aria-hidden="true">↗</span></a>

@@ -14,7 +14,8 @@
 .repo-hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(230px, .65fr); gap: 2rem; align-items: center; min-height: 380px; padding: clamp(2rem, 5vw, 4.5rem); border: 1px solid var(--repo-line); border-radius: 2px 32px 2px 32px; background: radial-gradient(circle at 80% 20%, rgba(53,196,201,.18), transparent 32%), linear-gradient(135deg, rgba(8,126,139,.09), transparent 60%); overflow: hidden; }
 .repo-eyebrow { color: var(--repo-blue); font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .repo-eyebrow__dot { display: inline-block; width: .5rem; height: .5rem; margin-right: .45rem; border-radius: 50%; background: var(--repo-cyan); box-shadow: 0 0 0 5px rgba(53,196,201,.16); }
-.repo-hero h1 { margin: .8rem 0 1.2rem; font-size: clamp(2.6rem, 6vw, 5rem); line-height: .98; }
+.repo-hero h1 { margin: .8rem 0 1.2rem; font-size: clamp(1.8rem, 3.1vw, 2.6rem); line-height: .98; }
+.repo-hero h1 .repo-hero__title-word { color: inherit; white-space: nowrap; }
 .repo-hero h1 span { color: var(--repo-blue); }
 .repo-hero__lead { max-width: 590px; color: var(--repo-muted); font-size: 1.05rem; line-height: 1.75; }
 .repo-actions { display: flex; flex-wrap: wrap; gap: 1.3rem; align-items: center; margin-top: 2rem; }
